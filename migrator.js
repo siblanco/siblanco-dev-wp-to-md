@@ -91,8 +91,8 @@ async function main() {
       `${targetDir}/${filename}`,
       `---
 isDraft: false
-title: ${title}
-description: ${stripHtml(excerpt).trim()}
+title: "${title}"
+description: "${stripHtml(excerpt).trim()}"
 date: ${date}
 tags: ${JSON.stringify(tags.map((tag) => tag.slug))}
 ---
